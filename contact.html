@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSstore | online store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="" width="125px" /></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+             
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="/contact.html">Contact us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <!-- TODo: 22:20 -->
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container2" >
+        <div class="form2-container2">
+            <div class="left-container2">
+                <div class="left-inner-container2">
+                    <h2 class="h2">Let's Chat</h2>
+                    <p style="color:antiquewhite">Whether you have a question, want to start a project or simply want to connect.</p>
+                    <br>
+                    <p style="color:white">Feel free to send me a message in the contact form</p>
+                </div>
+            </div>
+            <div class="right-container2">
+                <div class="right-inner-container2">
+                    <form  class="form2" action="#">
+                        <h2 class="lg-view">Contact</h2>
+                        <h2 class="sm-view">Let's Chat</h2>
+                        <p>Required*</p>
+                        <!-- <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div> -->
+                        <input class="input textarea" type="text" placeholder="Name *" />
+                        <input class="input textarea" type="email" placeholder="Email *" />
+                        <input class="input textarea" type="text" placeholder="Company" />
+                        <input class="input textarea" type="phone" placeholder="Phone" />
+                        <textarea rows="4" style="width:260px" placeholder="Message"></textarea>
+                        <div>
+                        <button class="button">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <div class="app-logo">
+                        <a href="https://www.apple.com/app-PS/" target="_blank"><img src="images/play-PS.png"
+                                alt="" /></a><br>
+                        <a href="https://play.google.com/PS/games" target="bl"><img src="images/play-store.png"
+                                alt="" /></a>
+
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="" />
+                    <p>
+                        <b>Thank you for visiting our Website</b>
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                        <li><a href="https://twitter.com/login?lang=en" target="_blank">Twitter</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright- @hardeep</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

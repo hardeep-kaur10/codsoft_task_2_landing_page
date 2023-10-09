@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - Red store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="" width="125px" /></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                      
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <!-- TODo: 22:20 -->
+                    </ul>
+                </nav>
+              
+                <svg xmlns="http://www.w3.org/2000/svg" alt="" class="menu-icon" onclick="menutoggle()" width="60" height="40" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Navigation ends here -->
+    <!-- About Page -->
+
+    <div class="account-page">
+       <h2 style="font-family: 'Times New Roman', Times, serif;">
+        <span style="color: red; font-size: 30px;">PSstore</span> is a online shopping website where
+         users can explore various of items<br>
+        Users can signup and login to check items in cart and purchase them.
+
+    </h2>
+    <br>
+    <p style="color: rgb(79, 44, 44); font-size: 20px; text-align:justify;">we believe that shopping should be more than just a transaction; it should be an experience. 
+        Our online store is more than just a place to buy products – it's a destination where you 
+        can discover a world of style, quality, and convenience.
+        We take pride in curating a diverse selection of products
+         that cater to your unique needs and desires. Whether you're looking for the latest fashion
+          trends, cutting-edge tech gadgets, or practical home essentials, we have it all. Our team
+           constantly explores the market to ensure you
+         have access to the best, most innovative products.
+    </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>
+                        Download App for Android <br />
+                        and ios mobile phone
+                    </p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="" />
+                        <img src="images/app-store.png" alt="" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="" />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
+                        Porro, eum?
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li><a href="https://twitter.com/login?lang=en" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright- @hardeep</p>
+        </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- js for toggle form -->
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+</body>
+
+</html>
